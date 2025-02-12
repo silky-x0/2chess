@@ -6,8 +6,11 @@ require('dotenv').config();
 
 const app = express();
 
+const gameRoutes = require('./routes/game');
+
 app.use(cors());
 app.use(express.json());
+app.use('/api/games', gameRoutes);
 
 const PORT = process.env.PORT || 3001;
 
