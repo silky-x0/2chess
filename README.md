@@ -55,7 +55,7 @@ A full-stack chess application with real-time gameplay using Socket.IO and Fireb
 
 1. Clone the repository:
 ```bash
-git clone [repository-url]
+git clone https://github.com/silky-x0/2chess.git
 cd 2chess
 ```
 
