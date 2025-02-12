@@ -57,17 +57,17 @@ npm run dev
 ## Features Implemented
 
 ### Backend
-- [x] Express server setup
-- [x] Socket.IO integration
-- [x] Firebase Admin SDK integration
-- [x] Real-time game updates
-- [x] Cross-origin resource sharing
-- [x] Environment configuration
+- [❌] Express server setup
+- [❌] Socket.IO integration
+- [❌] Firebase Admin SDK integration
+- [❌] Real-time game updates
+- [❌] Cross-origin resource sharing
+- [❌] Environment configuration
 
 ### Real-time Features
-- [x] Game room creation
-- [x] Player connection handling
-- [x] Real-time game state updates
+- [❌] Game room creation
+- [❌] Player connection handling
+- [❌] Real-time game state updates
 
 ## In Progress
 - [ ] Frontend implementation
