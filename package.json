@@ -1,0 +1,27 @@
+{
+  "name": "2chess",
+  "version": "1.0.0",
+  "description": "A full-stack chess application with real-time gameplay using Socket.IO and Firebase.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/silky-x0/2chess.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/silky-x0/2chess/issues"
+  },
+  "homepage": "https://github.com/silky-x0/2chess#readme",
+  "dependencies": {
+    "chess.js": "^1.2.0",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "socket.io": "^4.8.1"
+  }
+}
