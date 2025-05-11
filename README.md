@@ -2,19 +2,6 @@
 
 A full-stack chess application with real-time gameplay using Socket.IO and Firebase.
 
-## Project Structure
-```
-2chess/
-├── server/
-│   ├── src/
-│   │   ├── index.js         # Main server entry point
-│   │   └── config/          # Configuration files
-│   ├── package.json         # Server dependencies
-│   └── .env                 # Environment variables
-├── .gitignore              # Git ignore rules
-├── .gitattributes          # Git attributes for line endings
-└── README.md               # Project documentation
-```
 
 ## Technology Stack
 
@@ -53,29 +40,6 @@ FIREBASE_SERVICE_ACCOUNT=[your-firebase-credentials]
 ```bash
 npm run dev
 ```
-
-## Features Implemented
-
-### Backend
-- [✓] Express server setup
-- [✓] Socket.IO integration
-- [✓] Firebase Admin SDK integration
-- [✓] Real-time game updates
-- [✓] Cross-origin resource sharing
-- [✓] Environment configuration
-
-### Real-time Features
-- [✓] Game room creation
-- [✓] Player connection handling
-- [✓] Real-time game state updates
-
-## In Progress
-- [ ] Frontend implementation
-- [ ] Chess game logic
-- [ ] User authentication
-- [ ] Game state persistence
-- [ ] Move validation
-- [ ] Match history
 
 ## Contributing
 
