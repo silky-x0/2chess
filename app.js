@@ -10,7 +10,7 @@ const server = http.createServer(app);
 const io = socket(server);
 
 const chess = new Chess();
-let player = {};
+let players = {};
 let currentPlayer = "W";
 
 app.set("view engine", "ejs");
@@ -23,9 +23,15 @@ app.get("/", (req, res) => {
 io.on("connection", function(uniqueSocket) {
     console.log("Player Connected");
 
-    uniqueSocket.on("ky haal", function(){
-        console.log("Sab badhiya tm btao");
-    })
+    if(!players.white){
+        players.white = uniqueSocket.id;
+        uniqueSocket.emit("playerRole", "W");
+    }else if(!players.black){
+        players.black = uniqueSocket.id;
+        uniqueSocket.emit("playerRole", "B");
+    }else{
+        uniqueSocket.emit("spectatorRole");
+    }
 });
 
 server.listen(3000, function(){
