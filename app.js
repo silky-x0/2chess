@@ -23,7 +23,7 @@ app.get("/", (req, res) => {
 io.on("connection", function(uniqueSocket) {
     console.log("Player Connected");
 
-    uniqueSocket.on("kya haal", function(){
+    uniqueSocket.on("ky haal", function(){
         console.log("Sab badhiya tm btao");
     })
 });
