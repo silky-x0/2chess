@@ -3,7 +3,6 @@ const socket = require("socket.io");
 const http = require("http");
 const {Chess} = require("chess.js")
 const path = require("path");
-const { log } = require("console");
 
 const app = express();
 
@@ -35,9 +34,10 @@ io.on("connection", function(uniqueSocket) {
     }
 
     uniqueSocket.on("disconnect", function(){
-        if(uniqueSocket.id === players.white || players.black){
-            delete players.black;
+        if(uniqueSocket.id === players.white) {
             delete players.white;
+        } else if (uniqueSocket.id === players.black) {
+            delete players.black;
         }
     });
 
@@ -63,6 +63,7 @@ io.on("connection", function(uniqueSocket) {
             uniqueSocket.emit("Invalid Move", move);
             
         }
+    });    
 
 });
 
