@@ -108,9 +108,9 @@ socket.on("boardState", function(fen){
     renderBoard();
 });
 
-socket.on("move", function(move){
-    chess.move(move);
-    renderBoard();
-});
+// socket.on("move", function(move){
+//     chess.move(move);
+//     renderBoard();
+// });
 
 renderBoard();
